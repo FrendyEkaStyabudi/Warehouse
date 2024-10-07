@@ -1,0 +1,295 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins yang lebih modern */
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h1 {
+    color: #1d3557;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Updated Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 25px; /* Tambahan padding agar lebih lapang */
+    background: linear-gradient(145deg, #ffffff, #f0f4f8); /* Menggunakan gradient untuk tampilan yang lebih dinamis */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Lebih halus dan besar */
+    border-radius: 20px; /* Border radius lebih besar untuk tampilan modern */
+    transition: all 0.3s ease; /* Animasi halus */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efek hover untuk interaktivitas */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #457b9d;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f1faee;
+}
+
+
+/* Tombol Tambah Gudang */
+.btn-add {
+    background-color: #1d3557; /* Warna tombol */
+    color: #ffffff;
+    padding: 12px; /* Padding untuk tampilan yang lebih baik */
+    border-radius: 30px;
+    font-size: 1rem;
+    width: 100%; /* Lebar tombol 100% untuk mengisi kontainer */
+    margin-bottom: 20px; /* Jarak antara tombol dan elemen di bawahnya */
+}
+
+/* Menambahkan jarak antara tombol Edit dan Hapus */
+.btn-success {
+    margin-bottom: 15px;
+}
+
+/* Tombol Edit - Hijau */
+.btn-success {
+    background-color: #2a9d8f;
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #21867a;
+}
+
+/* Tombol Hapus - Merah */
+.btn-danger {
+    background-color: #e63946;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #d62828;
+}
+/* Buttons */
+.btn {
+    border-radius: 30px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Font lebih konsisten */
+    width: 120px; /* Menambahkan ukuran lebar yang sama */
+}
+
+/* Tombol Edit - Hijau */
+.btn-success {
+    background-color: #2a9d8f;
+    border: none;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #21867a;
+}
+
+/* Tombol Hapus - Merah */
+.btn-danger {
+    background-color: #e63946;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #d62828;
+}
+
+/* Back to List Button */
+a.back-button {
+    background-color: #2a9d8f;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+a.back-button:hover {
+    background-color: #21867a;
+    color: #f1faee;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1d3557;
+    font-family: 'Poppins', sans-serif; /* Label dengan font yang sama */
+}
+
+input[type="submit"] {
+    background-color: #1d3557;
+    color: #f1faee;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: #457b9d;
+    color: #fff;
+}
+
+input[type="text"], input[type="number"], input[type="time"] {
+    background-color: #f0f4f8;
+    color: #1d3557;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead {
+    background-color: #1d3557;
+    color: #f1faee;
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table td, .table th {
+    padding: 12px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #e9f5fb;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f9fe;
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: #bee5eb;
+}
+
+/* Form Layouts */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form select {
+    width: 100%;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+}
